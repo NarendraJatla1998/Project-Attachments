@@ -1,0 +1,29 @@
+<i class="pi pi-angle-left p-4 cursor" (click)="navigateToUserPage()">Users</i>
+<div *ngIf="userList" class="row m-auto d-flex justify-content-center">
+  <div
+    class="userList-card col-6 justify-content-center align-items-start d-flex mt-4"
+    *ngIf="loadUserData"
+  >
+    <div class="col-6 p-3 mt-3">
+      <h4 class="p-4">Avatar</h4>
+      <h4 class="p-4">First Name</h4>
+      <h4 class="p-4">Last Name</h4>
+      <h4 class="p-4">Email</h4>
+    </div>
+    <div class="col-6">
+      <img class="avatar-image p-3" [src]="userList?.avatar" alt="Avatar" />
+      <p class="p-3 mt-3">{{ userList?.first_name }}</p>
+      <p class="p-3">{{ userList?.last_name }}</p>
+      <p class="p-3">{{ userList?.email }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- No records Image if there is no data or search with invalid ID -->
+<div *ngIf="!userList" class="col-12 d-flex justify-content-center">
+  <img
+    class="no-records-image"
+    src="../../../assets/No-records-found.jpg"
+    alt="No Data"
+  />
+</div>

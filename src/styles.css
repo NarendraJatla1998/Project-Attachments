@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+p{
+    font-size: 0.85rem;
+}
+
+h4 {
+    font-size: 0.9rem !important;
+}
+
+.userList-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.avatar-image {
+    height: 60px;
+}
+
+.p-button {
+    height: 30px !important;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.p-menubar {
+    background: #02020217;
+}

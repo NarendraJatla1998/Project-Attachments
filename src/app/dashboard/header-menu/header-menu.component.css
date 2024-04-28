@@ -1,0 +1,16 @@
+::ng-deep.p-menubar {
+    .p-menubar-root-list > .p-menuitem {
+    
+        .p-menuitem-link:hover {
+            height: 20px;
+        }
+        .p-menuitem-link:focus {
+            height: 20px;
+        }
+    }
+    height: 40px;
+}
+
+::ng-deep .p-inputtext {
+    height: 25px;
+}

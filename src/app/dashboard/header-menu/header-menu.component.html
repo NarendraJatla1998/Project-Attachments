@@ -1,0 +1,7 @@
+<!-- Menu Header to navigate Users page wherever in the Application -->
+<div class="card">
+    <p-menubar [model]="items">
+            <input type="text" pInputText placeholder="Search ID" class="w-full" (input)="searchUser()" [(ngModel)]="search"/>
+    </p-menubar>
+</div>
+<router-outlet></router-outlet>

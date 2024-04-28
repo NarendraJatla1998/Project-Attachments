@@ -1,0 +1,11 @@
+.userList-card {
+    height: calc(100vh - 200px);
+}
+
+.avatar-image {
+    height: 100px;
+}
+
+.no-records-image {
+    height: calc(100vh - 200px);
+}
